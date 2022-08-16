@@ -24,12 +24,4 @@ public class TransferPage {
         return new DashboardPage();
     }
 
-    public DashboardPage transferError(int sum, DataHelper.CardNumber cardInfo) {
-        amount.setValue(String.valueOf(sum));
-        from.setValue(cardInfo.getNumber());
-        transfer.click();
-        error.shouldBe(visible).shouldHave(exactText("Превышен остаток по карте"));
-        return new DashboardPage();
-    }
-
 }

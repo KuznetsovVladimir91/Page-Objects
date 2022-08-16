@@ -26,8 +26,8 @@ public class MoneyTransferTest {
         var balanceSecondCardBeforeTransfer = dashboardPageBefore.getSecondCardBalance();
         dashboardPageBefore.transferFromFirstCard();
         int sum = 2000;
-        var TransferPage = new TransferPage();
-        TransferPage.transferToCard(sum, DataHelper.SecondCard());
+        var transferPage = new TransferPage();
+        transferPage.transferToCard(sum, DataHelper.SecondCard());
         var dashboardPageAfter = new DashboardPage();
         var balanceFirstCardAfterTransfer = dashboardPageAfter.getFirstCardBalance();
         var balanceSecondCardAfterTransfer = dashboardPageAfter.getSecondCardBalance();
@@ -49,8 +49,8 @@ public class MoneyTransferTest {
         var balanceSecondCardBeforeTransfer = dashboardPageBefore.getSecondCardBalance();
         dashboardPageBefore.transferFromSecondCard();
         int sum = 3000;
-        var TransferPage = new TransferPage();
-        TransferPage.transferToCard(sum, DataHelper.FirstCard());
+        var transferPage = new TransferPage();
+        transferPage.transferToCard(sum, DataHelper.FirstCard());
         var dashboardPageAfter = new DashboardPage();
         var balanceFirstCardAfterTransfer = dashboardPageAfter.getFirstCardBalance();
         var balanceSecondCardAfterTransfer = dashboardPageAfter.getSecondCardBalance();
@@ -72,8 +72,8 @@ public class MoneyTransferTest {
         var balanceSecondCardBeforeTransfer = dashboardPageBefore.getSecondCardBalance();
         dashboardPageBefore.transferFromFirstCard();
         int sum = 80000;
-        var TransferPage = new TransferPage();
-        TransferPage.transferError(sum, DataHelper.SecondCard());
+        var transferPage = new TransferPage();
+        transferPage.transferToCard(sum, DataHelper.SecondCard());
         var dashboardPageAfter = new DashboardPage();
         var balanceFirstCardAfterTransfer = dashboardPageAfter.getFirstCardBalance();
         var balanceSecondCardAfterTransfer = dashboardPageAfter.getSecondCardBalance();
